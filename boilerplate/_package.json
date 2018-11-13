@@ -28,6 +28,7 @@
     "start": "egg-scripts start --daemon --title=egg-server-{{name}}",
     "stop": "egg-scripts stop --title=egg-server-{{name}}",
     "proxy": "./node_modules/jar2proxy/bin/jar2proxy.js",
+    "build": "mkdir -p target && tar --exclude='./target' --exclude='./.git' -zcvf  target/{{name}}.tgz .",
     "dev": "egg-bin dev",
     "debug": "egg-bin debug",
     "test": "npm run lint -- --fix && npm run test-local",

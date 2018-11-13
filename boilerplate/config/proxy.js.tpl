@@ -5,7 +5,7 @@ const path = require('path');
 /* eslint-disable */
 /* istanbul ignore next */
 module.exports = function (app) {
-  const rpcClient = app.rpcClient || app.sofaRpcClient;
+  const rpcClient = app.rpcClient;
   if (!rpcClient) return;
 
   const consumer = rpcClient.createConsumer({

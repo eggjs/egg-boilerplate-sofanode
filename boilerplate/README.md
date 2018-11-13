@@ -30,11 +30,14 @@ $ npm run test
 ```
 
 ### 部署
+> node 技术栈部署规则参看 https://github.com/alipay/antcloud-node-stack#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6
 
 ```bash
-$ npm start
-$ npm stop
+// 打包 tgz
+$ npm bulid
+
 ```
+- 部署到金融云 https://tech.antfin.com/docs/2/46706
 
 ### 内置指令
 
