@@ -6,6 +6,5 @@ nginx:
 health_check:
   enable: true
   port: 7001
-  path: /healthy
+  path: /healthy/readiness
   status: 200
-  body: healthy
