@@ -5,7 +5,7 @@ module.exports = {
   async: true,
   directoryToJar: path.join(__dirname, '../libs'),
   services: [{
-    eggFramework: 'egg',
+    eggFramework: 'sofa-node',
     appName: '{{name}}',
     api: {
       sampleService: {
