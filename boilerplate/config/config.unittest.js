@@ -2,6 +2,10 @@
 
 // unittest config
 
+exports.sofaAntvip = {
+  endpoint: '',
+};
+
 exports.rpc = {
   registry: null,
   client: {
