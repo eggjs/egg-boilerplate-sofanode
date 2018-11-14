@@ -11,22 +11,15 @@ describe('test/app/controller/home.test.js', () => {
   });
 
   it('should GET /', async () => {
+    /*
     app.mockProxy('sampleService', 'say', arg => {
       return arg;
     });
-
-    app.mockProxy('sampleService', 'message', () => {
-      return 'message sofa node';
-    });
+    */
 
     await app.httpRequest()
       .get('/')
-      .expect('hello message sofa node')
-      .expect(200);
-
-    await app.httpRequest()
-      .get('/?name=sofa-node')
-      .expect('hello sofa-node')
+      .expect('hello SOFANode')
       .expect(200);
   });
 });
